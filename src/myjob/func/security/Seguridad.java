@@ -3,7 +3,6 @@ package myjob.func.security;
 import myjob.func.text.TextFunc;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.apache.log4j.Priority;
 
 public class Seguridad {
 

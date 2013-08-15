@@ -311,7 +311,6 @@ public class ClassFunc {
         ArrayList classes = new ArrayList();
 
         ClassLoader clazzLoader = null;
-        Class clazz;
 
         String className = "";
 

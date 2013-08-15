@@ -23,7 +23,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.apache.log4j.Priority;
 
 /**
  *
@@ -429,7 +428,7 @@ public class GeneralFunc {
 
     public static String stringFormat(String format, Object... objs) {
 
-        //Logger.getLogger(GeneralFunc.class).log(Level.DEBUG, "StringFormat con formato " + format);
+        Logger.getLogger(GeneralFunc.class).log(Level.DEBUG, "StringFormat con formato: " + format);
 
         String retVal = "";
 
@@ -460,7 +459,7 @@ public class GeneralFunc {
 
                 order = Integer.parseInt(m.group().substring(1, pos));
 
-                //Logger.getLogger(GeneralFunc.class).log(Level.DEBUG, "individualFormat " + individualFormat + "orden: " + order);
+                Logger.getLogger(GeneralFunc.class).log(Level.DEBUG, "individualFormat " + individualFormat + " orden: " + order);
 
                 retVal = retVal.replace(m.group(), formatObject(objs[order], individualFormat, '.'));
             } else {
@@ -470,7 +469,7 @@ public class GeneralFunc {
             loc_Conta++;
         }
 
-
+        Logger.getLogger(GeneralFunc.class).log(Level.DEBUG, "retVal " + retVal);
         return retVal;
     }
 

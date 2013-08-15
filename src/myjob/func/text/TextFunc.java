@@ -12,7 +12,6 @@ import java.util.Map;
 import myjob.func.general.GeneralFunc;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.apache.log4j.Priority;
 
 /**
  *
